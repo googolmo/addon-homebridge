@@ -1,9 +1,9 @@
 {
-  "name": "Homebridge",
+  "name": "homebridge",
   "version": "1.0.3",
   "slug": "homebridge",
   "description": "HomeKit support for your Home Assistant instance using Homebridge",
-  "url": "https://github.com/hassio-addons/addon-homebridge",
+  "url": "https://github.com/googolmo/addon-homebridge",
   "startup": "application",
   "boot": "auto",
   "host_network": true,
