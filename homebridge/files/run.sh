@@ -282,7 +282,9 @@ remove_old_pid_files() {
 #   None
 # ------------------------------------------------------------------------------
 start_avahi_daemon() {
+  local main_interface
   display_status_message 'Starting Avahi daemon'
+  sed -i "s/#allow-interfaces=.*/allow-interfaces=eth0/" /etc/avahi/avahi-daemon.conf
 
   if [[ "$DEBUG" == "true" ]];
   then
